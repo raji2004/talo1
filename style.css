@@ -1,0 +1,351 @@
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,600&display=swap');
+
+  body{
+    font-family: 'Raleway', sans-serif; 
+    background-color: #fff;
+    margin: auto;
+    scroll-behavior: smooth;
+}
+
+.navbar-nav li a{
+    font-weight: 600;
+    color: #1E1E1E;
+}
+
+.btn1{
+    background: #04152B;
+    border-radius: 68px;
+    padding: 10px 45px; 
+    font-size: 15px;
+    color: #FFFFFF;
+    border: none;
+    text-decoration: none;
+}
+.btn3{
+    background:  #303948;
+    border-radius: 68px;
+    padding: 10px 45px; 
+    font-size: 15px;
+    font-weight: 560;
+    color: #FFFFFF;
+    border: none;
+    margin: 5px;
+    text-decoration: none;
+}
+.btn2{
+    background: #5CCC96;
+    border-radius: 68px;
+    padding: 10px 45px; 
+    font-size: 15px;
+    font-weight: 560;
+    color: #04152B;
+    border: none;
+    margin: 5px;
+}
+.btn4{
+    background:  #0F4F30;
+    border-radius: 68px;
+    padding: 10px 45px; 
+    font-size: 20px;
+    font-weight: 560;
+    color: #FFFFFF;
+    border: none;
+    margin: 5px;
+}
+.header{
+    background-image: url('img/Bg.png');
+    background-position: center;
+    background-size: auto; 
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 60px;
+    border-radius: 60px; 
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.header h1{
+    margin-top: 45px;
+    font-size: 4em;
+    color: #fff;
+    font-weight: 700;
+
+    -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
+}
+
+.header p{
+    margin-top: 32px;
+    font-size: 1.2rem;
+     margin-right: auto;
+     margin-left: auto;
+    color: #5CCC96;
+    width: 60%;
+    
+}
+.buttons{
+    margin-top: 48px;
+   
+}
+.header img{
+    margin-bottom: -500px;
+    margin-top: 70px;
+  
+}
+.feedback{
+    margin-top: 350px;
+}
+.feedback .row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+ }
+.section-text{
+    font-size: 3.8em;
+    font-weight: 650;
+}
+
+.hiring{
+    background-color: #0F4F30;
+    color: #fff;
+}
+.hiring .row{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+.stream{
+    background-color: #04152B;
+    color: #fff;
+}
+.talent{
+    background-color: #E3FBE3;
+    color: #04152B;
+    padding: 3em;
+}
+.talent .row{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.join .row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+ }
+.join .container{
+    background-color: #68907D;
+    border-radius: 20px;
+    margin: 4em 0em ;
+}
+.join .container h1{
+   color: #E3FBE3;
+   font-weight: 600;
+    
+}
+footer{
+    background-color: #0B0D17;
+}
+
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 40px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .images   {
+   position: relative;
+   
+}
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (min-width: 900px) {
+    .header{
+        background-image: url('img/Bg.png');
+        background-position: center;
+        background-size: auto; 
+        background-repeat: no-repeat;
+        text-align: center;
+        padding: 60px;
+        border-radius: 60px; 
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+   .toggle{
+        display: none;
+    }
+    .header .img2{
+        display: none;
+    }
+      
+  }
+  @media screen and (max-width: 890px) {
+   .toggle{
+      position: fixed;
+      top: 10px;
+      right: 15px;
+    }
+   
+    
+  
+    .header{
+        background-image: url('img/Bg.png');
+        background-position: center;
+        background-size: auto; 
+        background-repeat: no-repeat;
+        text-align: left;
+        margin-left: -1%;
+        margin-right: 0px;
+        margin-top: 50px;
+        padding: 30px;
+        border-radius: 0px;
+    }  
+    .header h1{
+        margin-top: 10%;
+        font-size: 3.5rem;
+
+        color: #fff;
+        font-weight: 700;
+        -webkit-animation: none;  
+    }
+    
+    .header p{
+        margin-top: 20px;
+        font-size: 1.1rem;
+        color: #5CCC96;
+        width: 100%;
+    
+        
+    }
+    .buttons{
+        margin-top: 24px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+       
+    }
+    .buttons button{
+        font-size: 0.7em;
+        font-weight: 600;
+       
+    }
+    
+    .header img{
+        margin-bottom: 10px;
+        margin-top: 70px;
+      
+    } 
+    .header .img1{
+        display: none;
+    }
+    .feedback{
+        margin-top: -15px;
+    }
+    .feedback .row{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+     }
+    .section-text{
+        padding-top: 50px;
+        font-size: 2.5em;
+        font-weight: 650;
+    }
+   
+    .hiring{
+        background-color: #0F4F30;
+        color: #fff;
+    }
+    .hiring .row{
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+    }
+    .stream{
+        background-color: #04152B;
+        color: #fff;
+    }
+    .talent{
+        background-color: #E3FBE3;
+        color: #04152B;
+        padding: 1em;
+    }
+    .talent .row{
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+      .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 70px;
+      right: 5px;
+    }
+  }

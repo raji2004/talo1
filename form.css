@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    display: flex;
+    color: #04152B;
+    overflow: hidden;
+
+}
+
+.left {
+    display: flex;
+    width: 50%;
+    padding: 10px 20px;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.right {
+    width: 50%;
+}
+
+.right>img {
+    width: 100%;
+}
+
+.left>img {
+    width: 20%;
+    align-self: flex-start;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 20% 0;
+}
+
+.form>h1 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.form>p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #667085;
+}
+
+.right>img {
+    width: 100%;
+}
+
+.formgroup {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    gap: 5px;
+}
+
+.linear {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formgroup>label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.formgroup>input {
+    height: 39px;
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    padding: 0 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.linear>h2 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+form>button {
+    width: 100%;
+    height: 39px;
+    background: #21295C;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    border: none;
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 890px) {
+    body {
+        overflow: visible;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .left {
+        width: 100%;
+    }
+    .left > img{
+        width: 30%;
+    }
+
+    .linear {
+        flex-direction: column;
+    }
+}
