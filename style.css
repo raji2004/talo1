@@ -6,6 +6,10 @@
     margin: auto;
     scroll-behavior: smooth;
 }
+a{
+ text-decoration: none;
+ color: rgb(255, 255, 255);
+}
 
 .navbar-nav li a{
     font-weight: 600;
@@ -19,6 +23,7 @@
     font-size: 15px;
     color: #FFFFFF;
     border: none;
+    text-decoration: none;
 }
 .btn3{
     background:  #303948;
@@ -29,6 +34,7 @@
     color: #FFFFFF;
     border: none;
     margin: 5px;
+    text-decoration: none;
 }
 .btn2{
     background: #5CCC96;
@@ -100,6 +106,7 @@
 .section-text{
     font-size: 3.8em;
     font-weight: 650;
+    color: #04152B;
 }
 
 .hiring{
@@ -115,6 +122,13 @@
     background-color: #04152B;
     color: #fff;
 }
+.stream .row{
+    
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .talent{
     background-color: #E3FBE3;
     color: #04152B;
@@ -144,7 +158,24 @@
 footer{
     background-color: #0B0D17;
 }
-
+footer i:hover{
+  color: #0B0D17;
+}
+footer a.btn{
+  border: #E3FBE3 1px solid;
+}
+footer .row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+input{
+  background-color: #2f2f2f;
+}
+.footer-image{
+  width: 70%;
+  margin-left: -100px;
+}
 .overlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */   
     height: 100%;
@@ -338,6 +369,10 @@ footer{
         display: flex;
         flex-direction: row;
         align-items: center;
+    }
+    .footer-image{
+      width: 80%;
+      margin-left: -70px;
     }
     
       .overlay a {font-size: 20px}
