@@ -9,10 +9,12 @@ form.addEventListener('submit', async (e) => {
     try {
         const res = await axios.post('https://server-flax-pi.vercel.app', {...data})
         console.log(res)
+        alert('you have signed up successfully')
         return res
     } catch (error) {
         console.log(error.response)
         return error.response
     }
+
 
 })
