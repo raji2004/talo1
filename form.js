@@ -9,13 +9,14 @@ form.addEventListener('submit', async (e) => {
 
     console.log(data)
     try {
+        $("#myModal").modal("toggle");
         const res = await axios.post('https://server-flax-pi.vercel.app', { ...data })
         console.log(res)
         button.style.display = 'block'
         body.style.position = 'absolute'
         body.style.top= 0
         
-        $("#myModal").modal("toggle");
+      
         return res
     } catch (error) {
         console.log(error.response)
