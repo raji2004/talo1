@@ -2,13 +2,18 @@ const form = document.getElementById('form')
 const body = document.getElementById('body')
 const button = document.getElementById('container')
 
-form.addEventListener('submit', async (e) => {
+form.addEventListener('submit', (e) => {
     e.preventDefault()
     $("#myModal").modal("toggle");
     const formData = new FormData(e.target)
     const data = Object.fromEntries(formData)
 
     console.log(data)
+   sendData(data)
+
+
+})
+ async function sendData(data){
     try {
         
         const res = await axios.post('https://server-flax-pi.vercel.app', { ...data })
@@ -23,6 +28,4 @@ form.addEventListener('submit', async (e) => {
         console.log(error.response)
         return error.response
     }
-
-
-})
+}
