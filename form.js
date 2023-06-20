@@ -9,7 +9,7 @@ form.addEventListener('submit',async (e) => {
     const data = Object.fromEntries(formData)
 
     console.log(data)
-  return Promise.resolve(await sendData(data))
+  return sendData(data)
    
 
 
