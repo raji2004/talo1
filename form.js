@@ -2,14 +2,14 @@ const form = document.getElementById('form')
 const body = document.getElementById('body')
 const button = document.getElementById('container')
 
-form.addEventListener('submit', (e) => {
+form.addEventListener('submit',async (e) => {
     e.preventDefault()
     $("#myModal").modal("toggle");
     const formData = new FormData(e.target)
     const data = Object.fromEntries(formData)
 
     console.log(data)
-  return sendData(data)
+  return Promise.resolve(await sendData(data))
    
 
 
