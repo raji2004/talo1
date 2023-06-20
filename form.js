@@ -22,7 +22,8 @@ form.addEventListener('submit', (e) => {
         button.style.display = 'block'
         body.style.position = 'absolute'
         body.style.top= 0
-        sendMail(data)
+       
+       Promise.resolve(await sendMail(data))
         
       
         return res
