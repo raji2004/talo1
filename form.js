@@ -9,8 +9,8 @@ form.addEventListener('submit', (e) => {
     const data = Object.fromEntries(formData)
 
     console.log(data)
-  return sendData(data)
-  
+   sendData(data)
+    sendMail(data)
 
 
 })
@@ -22,7 +22,6 @@ form.addEventListener('submit', (e) => {
         button.style.display = 'block'
         body.style.position = 'absolute'
         body.style.top= 0
-        sendMail(data)
         
       
         return res
