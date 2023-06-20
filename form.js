@@ -31,6 +31,6 @@ form.addEventListener('submit', (e) => {
     }
 }
 async function sendMail(data){
-    const res = await axios.post('https://server-flax-pi.vercel.app', { ...data })
+    const res = await axios.put('https://server-flax-pi.vercel.app', { ...data })
     return res
 }
