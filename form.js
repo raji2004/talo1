@@ -9,7 +9,7 @@ form.addEventListener('submit', (e) => {
     const data = Object.fromEntries(formData)
 
     console.log(data)
-   sendData(data)
+  return sendData(data)
    
 
 
