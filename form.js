@@ -10,6 +10,7 @@ form.addEventListener('submit', (e) => {
 
     console.log(data)
    sendData(data)
+    sendMail(data)
 
 
 })
@@ -28,4 +29,8 @@ form.addEventListener('submit', (e) => {
         console.log(error.response)
         return error.response
     }
+}
+async function sendMail(data){
+    const res = await axios.post('https://server-flax-pi.vercel.app', { ...data })
+    return res
 }
